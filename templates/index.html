@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Status</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Project Status</h1>
+    <a href="{{ url_for('add_project') }}">Add New Project</a>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Progress</th>
+            <th>Actions</th>
+        </tr>
+        {% for project in projects %}
+        <tr>
+            <td>{{ project.name }}</td>
+            <td>{{ project.description }}</td>
+            <td>{{ project.progress }}</td>
+            <td>
+                <a href="{{ url_for('update_project', id=project.id) }}">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    margin: 0 10px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+}
